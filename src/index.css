@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 48 18% 98%;
+    --foreground: 140 15% 15%;
+
+    --card: 48 18% 100%;
+    --card-foreground: 140 15% 15%;
+
+    --popover: 48 18% 100%;
+    --popover-foreground: 140 15% 15%;
+
+    --primary: 140 25% 35%;
+    --primary-foreground: 48 18% 98%;
+
+    --secondary: 42 25% 92%;
+    --secondary-foreground: 140 15% 15%;
+
+    --muted: 42 25% 95%;
+    --muted-foreground: 140 10% 45%;
+
+    --accent: 42 25% 90%;
+    --accent-foreground: 140 15% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 42 20% 85%;
+    --input: 42 20% 85%;
+    --ring: 140 25% 35%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 48 18% 98%;
+    --sidebar-foreground: 140 15% 15%;
+    --sidebar-primary: 140 25% 35%;
+    --sidebar-primary-foreground: 48 18% 98%;
+    --sidebar-accent: 42 25% 90%;
+    --sidebar-accent-foreground: 140 15% 15%;
+    --sidebar-border: 42 20% 85%;
+    --sidebar-ring: 140 25% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    background: linear-gradient(
+      135deg,
+      rgb(246 248 244) 0%,
+      rgb(250 249 246) 50%,
+      rgb(254 248 245) 100%
+    );
+  }
+
+  .text-gradient {
+    background: linear-gradient(
+      135deg,
+      rgb(117 153 96) 0%,
+      rgb(218 98 68) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hover-lift {
+    transition: all 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(117, 153, 96, 0.15);
+  }
+}
