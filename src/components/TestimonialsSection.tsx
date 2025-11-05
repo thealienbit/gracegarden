@@ -7,7 +7,7 @@ const TestimonialsSection = () => {
     {
       name: "Juliet",
       relation: "Daughter",
-      content: "It was such pleasant and beautiful surprise ...but really happy for you if this is what you had always wanted to do...wishing you all success 🙏❤️ may this venture help you reach your goals, bring you happiness peace and blessings ❤️😊🙏 God bless you and your family abundantly...May he guide you on the right path every step of the way forward❤️🙏😊",
+      content: "It was such pleasant and beautiful surprise ..but really happy for you if this is what you had always wanted to do...wishing you all success 🙏❤️ may this venture help you reach your goals, bring you happiness peace and blessings ❤️😊🙏 God bless you and your family abundantly...May he guide you on the right path every step of the way forward❤️🙏😊",
       rating: 5,
       location: "Dubai"
     },
